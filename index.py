@@ -36,7 +36,7 @@ def set_terminal_title(title):
 set_terminal_title("Damoncc · Username root · Online 1 · Expiry On Now/11/25 · Ongoing 0")
 
 def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear')  # Linux/Mac
 
 def random_string(length=10):
     return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
